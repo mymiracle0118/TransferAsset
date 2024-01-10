@@ -20,7 +20,8 @@ import '@solana/wallet-adapter-react-ui/styles.css';
 export default function App(){
   const network = WalletAdapterNetwork.Devnet;
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-  const endpoint = useMemo();
+  const network = WalletAdapterNetwork.Devnet;
+  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
   const wallets = useMemo(() => [getPhantomWallet(),getSolletExtensionWallet(),getSolflareWallet(),getLedgerWallet()], []);
   return (
     <ConnectionProvider endpoint={endpoint}>
