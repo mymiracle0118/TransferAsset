@@ -18,6 +18,9 @@ import Main from './pages/main'
 import './bootstrap.min.css';
 import '@solana/wallet-adapter-react-ui/styles.css';
 export default function App(){
+
+  // Test code for co-author commit
+
   const network = WalletAdapterNetwork.Devnet;
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
